@@ -1,6 +1,5 @@
 """
-Operadores lógicos
-end(e) / or(ou) / not(não)
+Operadores lógicos - end(e)
 
 and: 
  -Todas as condições precisam ser verdadeiras.
@@ -35,9 +34,9 @@ print(True and " " and True)#string com argumento espaço
 
 
 #----------------------------------------------------------------------------------------------------------
+
 """
- Operadores lógicos
-# and (e) or (ou) not (não)
+ Operadores lógicos - or (ou)
 # or - Qualquer condição verdadeira avalia
 # toda a expressão como verdadeira.
 # Se qualquer valor for considerado verdadeiro,
@@ -62,7 +61,7 @@ senha = input('Senha: ') or 'Sem senha'
 print(senha)
 
 """
-
+"""
 
 entrada = input("digite: [E] ou [e] para entrar [S] ou [s] para sair: s")
 senha = input("digite sua senha: ")
@@ -76,5 +75,22 @@ if (entrada == "S" or entrada == "s") and senha == "1234":
     print("Entrar")
 else:
     print("Sair, senha ou metado de entrar incorreto")
+"""
+#-----------------------------------------------------------------------------------------------------------------------------------------------------------
+"""
+ Opérador lógico -not (não)
 
-    
+  - Usado para enverter expressões 
+  - o operador not inverte o valor de um booleano
+  - Not = False
+  - Not = True
+  - senha = input('Senha: ')
+  - print(not True)  # False
+  - print(not False)  # True
+
+"""
+
+print(not False)
+
+print(not True)
+
