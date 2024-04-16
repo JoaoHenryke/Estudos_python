@@ -8,7 +8,7 @@ x OU X - Hexadecimal
 (caractere)(><^)(quantidade)
  = - Força o número a aparecer antes dos zeros
 > - Esquerda
-> - Direita
+< - Direita
 ^ - Centro
 Sinal - + ou -
 Ex: 0 > -100,.1f
@@ -22,10 +22,10 @@ print(f"{variavel}")
 print(10 * "---")
 
 #função pad
-print(f"{variavel:>10}") # nesse exemplo será colocado 10 espaços do lado esquerdo do resultado da saida
+print(f"{variavel:@>10}") # nesse exemplo será colocado 10 espaços do lado esquerdo do resultado da saida
 
 print(10*"---")
-print(f"{variavel:<10}.") # nesse exemplo será colocado 10 espaçamento de prencgimento do lado Direita do resultado da saida
+print(f"{variavel:a<10}.") # nesse exemplo será colocado 10 espaçamento de prencgimento do lado Direita do resultado da saida
 
 print(10 * "-")
 print(f"{variavel:$^10}.") # nesse exemplo será colocado 10 espaçamento de prencgimento do lado Direita e da esquerda  do resultado da saida
