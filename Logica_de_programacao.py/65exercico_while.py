@@ -10,13 +10,14 @@ Iterando strings com while
 #print([tamanho_nome])
 #print(nome[3])
 
-nome = 'Henrique'
+nome = "Henrique"
+
 indice = 0
 novo_nome = ''
 
-
 while indice < len(nome):
-    letra = novo_nome[indice]
-    novo_nome += 
+    letra = nome[indice]
+    novo_nome += f'*{letra}'
+    indice += 1
 
-print("Acabou!")
+print(novo_nome)

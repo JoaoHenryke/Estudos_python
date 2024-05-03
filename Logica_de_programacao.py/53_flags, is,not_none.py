@@ -22,4 +22,4 @@ print(passou_no_if, passou_no_if is not None)
 
 nome = "Henrique"
 
-print("Henr"  not in  nome)
+print( is not  nome)
