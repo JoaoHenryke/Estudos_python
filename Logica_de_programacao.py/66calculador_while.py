@@ -37,7 +37,68 @@ solução: determinar as funções em somente uma linha para retorna tudo em boo
     input('Digite sair? [s]sim: ').lower().startswith('s')
     print(sair)
 
+    if sair is true:
+        break
+        
+---------------------------------------------------------------------------------
+
+forma de verificação de numero - pode usar a função isdigit() ou usar o try  / except 
+para realizar essa verificação dos dados solicitados ao usuário.
+
+[obs:  o uso do try / except é uma má pratica de programação em python.]
+
+continui - usado para que o código não quebre, e sim da quele ponto volta para o começo do código novamnete
+para começo do laço e começar a execução novamnete.
 """
 while True:
+    numero_1 =  input('Digite um número: ')
+    numero_2 =  input('Digite outro número: ')
+    operador = input('Digite o operador (+, -, /, *): ')
+
+    numeros_validos = None
+    num_1_float = 0
+    num_2_float = 0
+
+    try:
+        num_1_float = float(numero_1)
+        num_2_float = float(numero_2)
+        numeros_validos = True
+
+    except:
+        numeros_validos = None
+
+    if numeros_validos is None:
+        print('Um ou ambos os números digitados são inválidos.')
+        continue
+
+
+    operador_permitidos = "+-/*"
+
+    if operador not in operador_permitidos:
+        print('operador inválido')
+        continue
+
+    if len(operador) > 1:
+        print('Digite apenas um operador.')
+
+
+    print('Realizando sua conta, confira o resultado abaixo')
+
+    if operador == "+":
+        print(f"{num_1_float } + {num_2_float} =", num_1_float + num_2_float)
+    elif operador == "-":
+        print(f"{num_1_float } - {num_2_float} =", num_1_float - num_2_float)
+    elif operador == "*":
+        print(f"{num_1_float } * {num_2_float} =", num_1_float * num_2_float)
+    elif operador == "/":
+        print(f"{num_1_float } / {num_2_float} =", num_1_float / num_2_float)
+    else:
+        print("Nunca devria chegar até aqui.")
+    
+
+
     sair = input('digite sair? [s]sim: ').lower().startswith('s')
-    print(sair)
+    
+
+    if sair is True:
+        break
