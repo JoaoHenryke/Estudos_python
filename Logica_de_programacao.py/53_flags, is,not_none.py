@@ -1,4 +1,3 @@
-python
 """
 Flags(Bandeiras)
 None = Não valor
@@ -23,4 +22,4 @@ print(passou_no_if, passou_no_if is not None)
 
 nome = "Henrique"
 
-print( is not  nome)
+print( "henr" is not  nome)
